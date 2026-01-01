@@ -1,0 +1,7 @@
+- name: Semaphore success job
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Always succeed
+      debug:
+        msg: "This job is only to test email notification"
